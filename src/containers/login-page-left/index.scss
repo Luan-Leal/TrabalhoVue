@@ -1,0 +1,76 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(180deg, #33383d 0%, #1c1d20 100%);
+  justify-content: center;
+  color: white;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  font-size: 3.75em;
+  font-weight: 400;
+  color: white;
+  width: 45%;
+  height: 8%;
+  text-align: start;
+}
+
+p {
+  width: 45%;
+  font-size: 1em;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  line-height: 1.25em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.875em;
+  margin-bottom: 3%;
+  padding-right: 33%;
+}
+
+.login-erro {
+  color: #e9b425;
+  width: 50%;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  span {
+    display: block;
+    padding: 0 15%;
+  }
+  @media (max-width: 1650px) {
+    width: 50%;
+  }
+  @media (min-width: 1651px) and (max-width: 5000px) {
+    font-size: 1.1em;
+    width: 43%;
+  }
+}
+
+.botao-login {
+  text-decoration: none;
+  color: #e0e0e0;
+  width: 50%;
+  height: 6%;
+  padding: 0 3%;
+  padding-bottom: 5%;
+  button {
+    background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+}
