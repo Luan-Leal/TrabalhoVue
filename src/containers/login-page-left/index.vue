@@ -1,11 +1,12 @@
 <template>
   <div class="welcome">
-    <h1>Olá,</h1>
-    <p>Para continuar navegando de forma segura, efetue o login na rede.</p>
-    <h2>Login</h2>
+    <h1>{{ hello }}</h1>
+    <p>{{ warning }}</p>
+    <h2>{{ LoginTitle }}</h2>
     <login-input />
     <div class="login-erro">
-      <span>{{ text }}</span>
+      <span v-if="senhaCorreta" class="login-true">{{ text }}</span>
+      <span v-else class="login-false">{{ text }}</span>
     </div>
     <div class="botao-login">
       <button>Continuar</button>
@@ -17,6 +18,15 @@
 import loginInput from '@/components/input/index.vue';
 export default {
   name: 'login-page-left',
+  data() {
+    return {
+      hello: 'Olá,',
+      warning:
+        'Para continuar navegando de forma segura, efetue o login na rede.',
+      loginTitle: 'Login',
+      senhaCorreta: true,
+    };
+  },
   components: {
     loginInput,
   },

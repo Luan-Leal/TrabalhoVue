@@ -9,10 +9,7 @@
     </div>
     <div class="cronometro">
       <p>Application refresh in</p>
-      <div class="timer">
-        <h1 id="timer">600</h1>
-        <h6>segundos</h6>
-      </div>
+      <home-timer />
     </div>
     <div class="login">
       <div class="continuar">
@@ -26,8 +23,12 @@
 </template>
 
 <script>
+import homeTimer from '@/components/timer/index.vue';
 export default {
   name: 'home-footer',
+  components: {
+    homeTimer,
+  },
 };
 </script>
 
