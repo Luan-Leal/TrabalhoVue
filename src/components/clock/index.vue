@@ -5,9 +5,11 @@
       >:<span id="minutos">{{ dateTime.minutes }}</span>
     </h1>
     <p>
-      <span id="diaSemana"> {{ day }} </span>,<span id="dia"></span> de
-      <span id="mes"></span> de
-      <span id="ano"></span>
+      <span id="diaSemana">{{ dateTime.day }} </span>,<span id="dia">{{
+        dateTime.date
+      }}</span>
+      de <span id="mes">{{ dateTime.mouth }}</span> de
+      <span id="ano">{{ dateTime.year }}</span>
     </p>
   </div>
 </template>
@@ -21,8 +23,9 @@ export default {
       dateTime: {
         hours: date.getHours(),
         minutes: date.getMinutes(),
-        seconds: date.getSeconds(),
+        date: date.getDate(),
         day: date.getDay(),
+        mouth: date.getMonth(),
         year: date.getFullYear(),
       },
       timer: undefined,
@@ -34,8 +37,9 @@ export default {
       this.dateTime = {
         hours: date.getHours(),
         minutes: date.getMinutes(),
-        seconds: date.getSeconds(),
+        date: date.getDate(),
         day: date.getDay(),
+        mouth: date.getMonth(),
         year: date.getFullYear(),
       };
     },
@@ -48,15 +52,6 @@ export default {
     clearInterval(this.timer);
   },
 };
-
-let hoje = new Date();
-let data_formatada = hoje.toLocaleDateString('pt-BR', {
-  day: 'numeric',
-  month: 'long',
-  year: 'numeric',
-});
-
-console.log(data_formatada);
 </script>
 
 <style lang="scss" scoped>

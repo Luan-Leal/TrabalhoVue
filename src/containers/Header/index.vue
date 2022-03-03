@@ -1,6 +1,10 @@
 <template>
   <section>
-    <img src="@/assets/compassuol-logo-min.png" alt="Compass logo black" />
+    <img
+      draggable="false"
+      src="@/assets/compassuol-logo-min.png"
+      alt="Compass logo black"
+    />
     <header-clock> </header-clock>
     <header-weather> </header-weather>
   </section>
