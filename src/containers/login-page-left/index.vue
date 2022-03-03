@@ -1,8 +1,9 @@
 <template>
   <div class="welcome">
+    <img src="@/assets/compassuol-logo-white.png" class="img" alt="" />
     <h1>{{ hello }}</h1>
     <p>{{ warning }}</p>
-    <h2>{{ LoginTitle }}</h2>
+    <h2>{{ loginTitle }}</h2>
     <login-input />
     <div class="login-erro">
       <span v-if="senhaCorreta" class="login-true">{{ text }}</span>
