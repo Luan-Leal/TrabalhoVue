@@ -20,3 +20,9 @@ img {
   width: auto;
   height: 15%;
 }
+
+@media (max-width: 1100px) {
+  .login-right {
+    display: none;
+  }
+}

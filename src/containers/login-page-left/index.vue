@@ -9,7 +9,9 @@
       <span v-else class="login-false">{{ text }}</span>
     </div>
     <div class="botao-login">
-      <button>Continuar</button>
+      <button @click="Login">
+        <router-link class="button" to="/home">Continuar</router-link>
+      </button>
     </div>
   </div>
 </template>
@@ -36,6 +38,7 @@ export default {
       default: 'Ops, usuario ou senha inválidos. Tente novamente!',
     },
   },
+  methods: {},
 };
 </script>
 

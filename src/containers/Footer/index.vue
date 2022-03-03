@@ -16,7 +16,7 @@
         <button>continuar navegando</button>
       </div>
       <div class="logout">
-        <button><a href="./index.html">Logout</a></button>
+        <button><router-link to="/">Logout</router-link></button>
       </div>
     </div>
   </section>
