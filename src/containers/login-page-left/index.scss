@@ -132,6 +132,12 @@
   padding: 4% 3%;
   @media (max-width: 1500px) {
     width: 90%;
+    @media (max-width: 1500px) {
+      width: 70%;
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
   }
   button {
     background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
@@ -141,11 +147,6 @@
     cursor: pointer;
     padding: 5% 38%;
     width: 100%;
-    @media (max-width: 1500px) {
-    }
-    @media (max-width: 1000px) {
-      width: 100%;
-    }
   }
   .button {
     text-decoration: none;
