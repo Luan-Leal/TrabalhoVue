@@ -7,6 +7,7 @@
         placeholder="Usuário"
         id="user"
         name="username"
+        v-model="a"
       />
       <i class="user-icon"
         ><img draggable="false" src="@/assets/user-icon.png" alt=""
@@ -19,6 +20,7 @@
         name="password"
         id="senha"
         placeholder="Senha"
+        v-model="a"
       />
       <i
         ><img
@@ -34,6 +36,12 @@
 <script>
 export default {
   name: 'login-form',
+  data() {
+    return {
+      user: 'a',
+      password: 'a',
+    };
+  },
 };
 </script>
 
