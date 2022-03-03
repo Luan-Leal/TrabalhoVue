@@ -9,6 +9,13 @@
   color: white;
   img {
     display: none;
+    @media (max-width: 1000px) {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+    }
   }
   h1 {
     display: flex;
@@ -51,7 +58,7 @@
 
     @media (max-width: 1650px) {
       font-size: 1.25em;
-      margin-left: 7%;
+      margin-left: -7%;
       width: 55%;
     }
     @media (max-width: 1340px) {
@@ -60,7 +67,7 @@
       width: 60%;
     }
     @media (max-width: 1000px) {
-      font-size: 1em;
+      font-size: 1.1em;
       margin-left: 7%;
       width: 90%;
     }
@@ -123,6 +130,9 @@
   height: 8%;
   width: 50%;
   padding: 4% 3%;
+  @media (max-width: 1500px) {
+    width: 90%;
+  }
   button {
     background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
@@ -131,9 +141,17 @@
     cursor: pointer;
     padding: 5% 38%;
     width: 100%;
+    @media (max-width: 1500px) {
+    }
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
   }
   .button {
     text-decoration: none;
     color: white;
+    @media (max-width: 5000px) {
+      font-size: 1.25em;
+    }
   }
 }
