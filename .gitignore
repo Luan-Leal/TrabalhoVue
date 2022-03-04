@@ -1,6 +1,10 @@
 .DS_Store
 node_modules
 package-lock.json
+script
+.firebase
+.firebaserc
+firebase.json
 /dist
 
 

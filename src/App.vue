@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Login-page',
+  name: 'App',
 };
 </script>
 
@@ -14,7 +14,13 @@ export default {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  overflow-y: hidden;
   overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 </style>
