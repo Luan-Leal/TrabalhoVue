@@ -20,7 +20,7 @@
         name="password"
         id="senha"
         placeholder="Senha"
-        v-model="a"
+        :v-model="a"
       />
       <i
         ><img
